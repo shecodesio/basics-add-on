@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark theme</title>
+    <style>
+      .dark {
+        background: black;
+      }
+
+      button {
+        background: black;
+        color: white;
+      }
+
+      .dark button {
+        background: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Dark theme</button>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.add("dark");
+      }
+
+      let themeButton = document.querySelector("button");
+
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
